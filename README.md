@@ -1,47 +1,21 @@
 # Patrick — Research
 
-[GitHub](https://github.com/patrickod32)
+This repo highlights my independent AI Safety research. Professionally I am an experienced fullstack developer currently leading a AI team at the architect level in the finance domain. I have a background in quant development, fullstack development, app dev, project management and am a former physicist. My physics focus was nanotech and lithography.
 
-## [Don't Waste a Good Swarm Attack and the Colluder's Dilemma](https://www.lesswrong.com/posts/oLHdtvYSrvDpWREo4/don-t-waste-a-good-swarm-attack-and-the-colluder-s-dilemma)
+My research interests are mechanistic interpretability, AI control and Alignment. My approach is to use findings from pre/post training recipes and repurpose them for safety use cases. An example of this is my use of a [parameter golf](https://github.com/openai/parameter-golf) architecture for AI safety. In an autoresearch loop I distilled a 20GB SAE pipeline into a 5.3MB probe. The probe learnt 2000 concepts to detect from text and the top 5 concepts it detects fired in the teacher SAE 95% of the time. I spend a lot of my research time studying technical pretraining reports as I think this is a key factor in understanding how to best design interpretability experiments.
 
-11 November 2026 · LessWrong
+## Articles
 
-> This is the Colluder's Dilemma: keep your colony small and less effective at causing harm or make it larger and more detectable to the harness.
+- **[Don’t Waste a Good Swarm Attack and the Colluder’s Dilemma](reports/swarm-attacks-and-the-colluders-dilemma.md)**  
+  “This is the Colluder's Dilemma: keep your colony small and less effective at causing harm or make it larger and more detectable to the harness.”
 
-> The harness, the Swarm orchestration layer, could at any time fork an agent and its context and assign it a new reporting role.
+- **[Competitive AI Safety is the loss function to make sure AI goes well](reports/competitive-ai-safety.md)** · [Code: seq2feature](https://github.com/patrickod32/seq2feature)  
+  “AI safety needs a loss function and Competitive AI safety can deliver it.”
 
-[Read the report](reports/swarm-attacks-and-the-colluders-dilemma.md) · [Original on LessWrong](https://www.lesswrong.com/posts/oLHdtvYSrvDpWREo4/don-t-waste-a-good-swarm-attack-and-the-colluder-s-dilemma)
+- **[The AI Safety Puzzle Everyone Avoids: How To Measure Impact, Not Intent.](reports/measuring-impact-landed-writes.md)** · [Code and paper: landed_writes](https://github.com/patrickod32/landed_writes)  
+  “It is a literal tracking of who wrote what and so doesn't reveal the why.”
 
-## [Competitive AI Safety is the loss function to make sure AI goes well](https://www.lesswrong.com/posts/PagGF8roBJmjLunsX/competitive-ai-safety-is-the-loss-function-to-make-sure-ai)
+- **[The End of the Digital Age Mirrors its Beginning](reports/the-end-of-the-digital-age.md)**  
+  “The Digital Age began with us learning how to write circuits. It will end with us learning to read them.”
 
-16 July 2026 · LessWrong
-
-> I explored this pattern as part of a 30 hour BlueDot Technical AI Safety Project Sprint. The result was seq2feature: a Gemma-9B layer 20 SAE distilled into a 5.3MB probe that predicts latents from text alone: without reading a single activation.
-
-[Read the report](reports/competitive-ai-safety.md) · [Original on LessWrong](https://www.lesswrong.com/posts/PagGF8roBJmjLunsX/competitive-ai-safety-is-the-loss-function-to-make-sure-ai) · [Code: seq2feature](https://github.com/patrickod32/seq2feature)
-
-## [The AI Safety Puzzle Everyone Avoids: How To Measure Impact, Not Intent.](https://www.lesswrong.com/posts/3KTgeXBfhvRKfL5kf/)
-
-22 July 2025 · LessWrong · Landed Writes
-
-> A landed write is simply the value a model component, attention head or neuron, contributes to the residual - scaled exactly as the model itself sees it:
->
-> landed_i = (write_i / σ) · γ_i
-
-> It is a literal tracking of who wrote what and so doesn't reveal the why.
-
-[Read the report](reports/measuring-impact-landed-writes.md) · [Original on LessWrong](https://www.lesswrong.com/posts/3KTgeXBfhvRKfL5kf/) · [Code and paper: landed_writes](https://github.com/patrickod32/landed_writes)
-
-## The End of the Digital Age Mirrors its Beginning
-
-19 August 2026 · LessWrong Shortform
-
-[Read the report](reports/the-end-of-the-digital-age.md) · [Original on LessWrong](https://www.lesswrong.com/posts/eKCywapzwhBxNo7KH/patrick0d-s-shortform/comment/JLSrt9jEgbKQvPjjz)
-
-## BlueDot Impact
-
-I was also a member of two BlueDot Impact cohorts in 2026.
-
----
-
-*Reports reproduce the original articles and shortform essay. Original source links and externally hosted images are retained.*
+*Each article includes a link to its original publication on LessWrong.*
